@@ -304,8 +304,8 @@ Shader "Waterfall/Additive (Volumetric)"
                 float opaqueDepth = tex2Dproj(_CameraDepthTexture, i.screenPos).x;
                 
                 // ray entry and exit positions
-                float3 objectEntry = mad(Si.x, i.V, i.Cam);
-                float3 objectExit = mad(Si.y, i.V, i.Cam);
+                float3 objectEntry = mad(Si.x, i.V, i.Cam * 0.01);
+                float3 objectExit = mad(Si.y, i.V, i.Cam * 0.01);
                 // transform to clip space
                 float4 clipEntry = UnityObjectToClipPos(float4(objectEntry, 1));
                 float4 clipExit = UnityObjectToClipPos(float4(objectExit, 1));
