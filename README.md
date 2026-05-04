@@ -1,6 +1,6 @@
 # Waterfall
 
-A mod for Kerbal Space Program, intended to provide an alternate way to simulate engine visual effects.
+A mod for Kerbal Space Program, intended to provide an alternate way to simulate engine visual effects. Fixed for max linux glitching with a bandaid fix
 
 * [Features](#features)
 * [Dependencies](#dependencies)
